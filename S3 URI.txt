@@ -1,0 +1,10 @@
+### extracted data
+
+s3://fda-data-airflow-etl-project/api-extracted-data/FDA_data.csv
+
+### clean data
+
+s3://fda-data-airflow-etl-project/api-cleaned-data/drugs.csv
+s3://fda-data-airflow-etl-project/api-cleaned-data/patients.csv
+s3://fda-data-airflow-etl-project/api-cleaned-data/reports.csv
+s3://fda-data-airflow-etl-project/api-cleaned-data/symptoms.csv

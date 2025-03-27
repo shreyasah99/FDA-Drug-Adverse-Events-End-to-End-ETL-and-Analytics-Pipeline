@@ -1,0 +1,66 @@
+//CREATING DATABASE TO LOAD TRANSFORMED DATA//
+CREATE OR REPLACE DATABASE FDA_DB;
+
+//CREATING SCHEMA FOR S3 STAGE//
+CREATE OR REPLACE SCHEMA  FDA_DB.FDA_STAGES
+
+//CREATING SCHEMA FOR FILEFORMATS//
+CREATE OR REPLACE SCHEMA  FDA_DB.FDA_FILE_FORMATS
+
+//CREATING TABLES FOR CLEANED DATA//
+
+//REPORTS DATA//
+CREATE OR REPLACE TABLE FDA_DB.PUBLIC.fda_reports(
+    safetyreport_version INT,
+    safetyreport_id  INT,
+    report_country VARCHAR(50),
+    report_date DATE,
+    event_outcome VARCHAR(100),
+    other_serious_condition VARCHAR(100),
+    resulted_in_death VARCHAR(100),
+    PRIMARY KEY (safetyreport_id));
+
+//PATIENTS DATA//
+CREATE OR REPLACE TABLE FDA_DB.PUBLIC.fda_patients(
+    patient_id INT,
+    version_id INT,
+    patient_age INT,
+    patient_weight INT,
+    patient_sex VARCHAR(10),
+    PRIMARY KEY (patient_id));
+
+//SYMPTOMS DATA//
+CREATE OR REPLACE TABLE FDA_DB.PUBLIC.fda_symptoms(
+    symptom_id INT,
+    symptom_name VARCHAR(50),
+    symptom_outcome VARCHAR(50));
+
+//DRUGS DATA//
+CREATE OR REPLACE TABLE FDA_DB.PUBLIC.fda_drugs(
+    drug_id INT,
+    drug_characterization INT,
+    drug_type VARCHAR(30),
+    drug_trade_name VARCHAR(50),
+    drug_actual_purpose VARCHAR(50),
+    drug_active_chemical STRING);
+    
+//SELECT STATEMENTS TO VALIDATE THE COPY EXECUTIONS BY THE AIRFLOW PIPELINE//   
+SELECT * FROM FDA_DB.PUBLIC.fda_reports
+
+SELECT * FROM FDA_DB.PUBLIC.fda_patients
+
+SELECT * FROM FDA_DB.PUBLIC.fda_symptoms
+
+SELECT * FROM FDA_DB.PUBLIC.fda_drugs
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+
