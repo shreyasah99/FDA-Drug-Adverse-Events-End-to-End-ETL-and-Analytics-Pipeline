@@ -1,4 +1,4 @@
-# FDA Drug Adverse Events ETL Project
+# FDA Drug Adverse Events: End-to-End ETL and Analytics Pipeline
 
 This project involves extracting data on drug adverse events from the [FDA's open-source data platform](https://open.fda.gov/), transforming it using Python Pandas, and loading it into Snowflake for further analysis and visualization. The entire ETL process is orchestrated using Apache Airflow and Docker, with data visualization performed using Tableau Desktop.
 
@@ -105,11 +105,11 @@ Once the data is loaded into Snowflake:
 [![2020_Animation](https://github.com/user-attachments/assets/4604de80-adfe-42b6-8a63-a673257cdb1d)
 ](https://public.tableau.com/app/profile/ravi.shankar.p.r/viz/2020_Drug_adverse_events/Dashboard3)
 
-> ### Checkout Tableau data visualization at [2020_Drug_adverse_events \| Tableau Public](https://public.tableau.com/app/profile/ravi.shankar.p.r/viz/2020_Drug_adverse_events/Dashboard3)
+> ### Checkout Tableau data visualization at [2020_Drug_adverse_events \| Tableau Public](https://public.tableau.com/app/profile/shreyas.anil.hingmire/viz/FDADrugAdverseEventsEnd-to-EndETLandAnalyticsPipeline/Dashboard3)
 
-> ### Checkout [how_to_run.docx](https://github.com/ravishankar324/FDA-Drug-Adverse-events-ETL-Project/blob/master/How_To_Run.docx) file for detailed steps to run this project.
+> ### Checkout [how_to_run.docx](https://github.com/shreyasah99/FDA-Drug-Adverse-Events-End-to-End-ETL-and-Analytics-Pipeline/blob/main/How_To_Run.docx) file for detailed steps to run this project.
 
-> ### Checkout [S3 URI.txt](https://github.com/ravishankar324/FDA-Drug-Adverse-events-ETL-Project/blob/master/S3%20URI.txt) to get URI's for raw and transformed data.
+> ### Checkout [S3 URI.txt](https://github.com/shreyasah99/FDA-Drug-Adverse-Events-End-to-End-ETL-and-Analytics-Pipeline/blob/main/S3%20URI.txt) to get URI's for raw and transformed data.
 
 ## Contribution
 Contributions are welcome! Please open an issue or submit a pull request with any improvements.
